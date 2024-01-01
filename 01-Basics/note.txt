@@ -4,4 +4,18 @@ once a value is assigned in const keyword there is no changes
 /*------------*/ multi line comment.
 let , var, and const is keyword.
 value assigned in const keyword can change in future.
+for documentation visit tc39.es or mdn (mozilla firefox)
+"use strict"; // for treat never version of js
+ // Data Type primitive
+ Number => 2 to power 53
+ bigint => for very large value 
+ boolean => simply true or false 
+ string = ""
+ null => standalone value 
+ undefined 
+ symbol 
+// Datatype non primitive 
+object 
+ typeof (null) => object
+ typeof (undefined) => undefined
 
