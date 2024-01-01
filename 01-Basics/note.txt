@@ -18,4 +18,15 @@ for documentation visit tc39.es or mdn (mozilla firefox)
 object 
  typeof (null) => object
  typeof (undefined) => undefined
+ // Conversion
+ "33" => 33
+ ""33abc => NaN
+ true => 1; false => 0;
+ 1=> true; 0=> false;
+ "" => false; "Adil" => true;
+ //------------
+ string + string = string
+ string + number = string
+ number + string = ?
+
 
