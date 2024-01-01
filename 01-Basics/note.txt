@@ -1,0 +1,7 @@
+prefer not to use var keyword because of block and functional scope.
+once a value is assigned in const keyword there is no changes
+// single line comment.
+/*------------*/ multi line comment.
+let , var, and const is keyword.
+value assigned in const keyword can change in future.
+
