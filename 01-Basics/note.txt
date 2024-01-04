@@ -8,14 +8,25 @@ for documentation visit tc39.es or mdn (mozilla firefox)
 "use strict"; // for treat never version of js
  // Data Type primitive
  Number => 2 to power 53
- bigint => for very large value 
+ bigInt => for very large value 
  boolean => simply true or false 
  string = ""
  null => standalone value 
  undefined 
  symbol 
-// Datatype non primitive 
-object 
+// Datatype non primitive or Reference
+//Array
+eg.    const heros = ["Adil", "Rasheed", "Mohammad"]
+//Objects
+eg. let myObj = {
+name:"adil",
+age:24,
+}
+//Functions
+let myfunction = Function(){
+    console.log("Hello KNITian");
+}
+
  typeof (null) => object
  typeof (undefined) => undefined
  // Conversion
