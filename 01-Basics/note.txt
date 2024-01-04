@@ -40,4 +40,9 @@ let myfunction = Function(){
  string + number = string
  number + string = ?
 
+ // memory uses
+ # primitive datatype => stack
+ # non primitive datatype => heap
+ 
+
 
