@@ -60,5 +60,4 @@ for (let score = 170; score <= 200; score++) {
         continue;
     }
     console.log(score);
-    
-}
+    }
