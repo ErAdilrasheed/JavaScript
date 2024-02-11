@@ -9,7 +9,19 @@
     
 </body>
 <script>
+const div = document.createElement('div')
+console.log(div);
+div.className = "main"
+div.id = Math.round(Math.random() *10 +1)
+div.setAttribute('title' , 'generated_title')  // required key and value // here title is a key and generated title is a value.
+div.style.backgroundColor = 'green'
+div.style.padding = '12px'
+div.style.borderRadius = '20px'
+// div.innerText = 'Learning javascript'
+const addText = document.createTextNode("Learning Javascript")  // creates a new text element
+div.appendChild(addText)
+document.body.appendChild(div)   //attached and shows the content on body
 
-    gg
+                                               
 </script>
 </html>
