@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      li{
+  img{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  position: relative;
+  margin: 10px; 
+  }
+}
+    </style>
+    <title>My Images</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h1>my images</h1>
+    <ul id="images">
+      <li><img id="tower" src="image/1.jpeg" alt="clocktower" /></li>
+      <li><img id="mosque" src="image/2.jpg" alt="" /></li>
+      <li><img id="girl" src="image/3.jpg" alt="" /></li>
+      <li><img id="kaba" src="image/4.jpg" alt="" /></li>
+      <li><img id="bazar" src="image/5.jpg" alt="" /></li>
+      
+      
+        <a
+        style="background-color: #fff; width: 50px; height: 20px"
+        id="google" href="https://google.com">Google</a>
+    </ul>
+  </body>
+  <script>
+    // document.getElementById('girl').onclick = function(){
+    //   alert('girl touched')
+    // }
+
+    // document.getElementById("images").addEventListener("click",function (e){
+    // console.log("inside the ul touched");
+    // //e.stopPropagation()
+    // },true);
+    
+
+    // document.getElementById("kaba").addEventListener("click",function (e){
+    // console.log("inside kaba touched");
+    // e.stopPropagation()
+    // },true);
+
+    // document.getElementById("google").addEventListener("click",function (e){
+    // console.log("google touched");
+    // e.stopPropagation()
+    // //e.preventDefault()
+    // },true);
+
+    document.querySelector("#images").addEventListener("click",function (e){
+      e.preventDefault()
+    console.log(e.target.tagName);
+    if (e.target.tagName === 'IMG') {
+      console.log(e.target.id);
+    let removeIt = e.target.parentNode;
+    removeIt.remove(); 
+    }
+   
+
+  
+    });
+  </script>
+</html>
