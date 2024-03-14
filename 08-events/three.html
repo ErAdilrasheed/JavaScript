@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <h1>Change this text using javascript</h1>
+  <button>Stop</button> -->
+
+
+  <!-- <h1>Learning JavaScript</h1>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button> -->
+
+
+
+  <h1>Click Start Button to change background color every second</h1>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+</body>
+<script>
+// const changeText = function(){
+//   document.querySelector('h1').innerHTML = "Your Text is Changed"
+  
+// }
+
+// const changeMe = setTimeout(changeText , 5000)
+
+// const stop = document.querySelector('button').addEventListener('click' , function(){
+// clearTimeout(changeMe)
+// })
+
+
+
+
+// const sayJs = function(str){
+//   console.log(str , Date.now());
+// }
+// const IntervalId = setInterval(sayJs ,  1000 , "Adil Bhaiya" )
+// setInterval(IntervalId);
+// const stop = document.querySelector('#stop').addEventListener('click' , function(){
+//   clearTimeout(IntervalId)
+// })
+
+
+
+// Generate a random color
+
+const randomColor = function(){
+  let hex = '0123456789ABCDEF'
+  let color = "#"
+  for (let i = 0; i<6; i++){
+    color += hex[Math.floor(Math.random() * 16 )]
+  }
+  return color
+}
+
+let IntervalId;
+const startChangingColor = function(){
+  if(!IntervalId){
+  IntervalId = setInterval(changeBgColor , 1000)
+}  
+}
+function changeBgColor(){
+  document.body.style.backgroundColor = randomColor()
+}
+
+const stopChangingColor = function(){
+  clearInterval(IntervalId)
+  IntervalId = null;
+}
+
+document.querySelector('#start').addEventListener('click' , startChangingColor)
+
+document.querySelector('#stop').addEventListener('click' , stopChangingColor)
+</script>
+</html>
