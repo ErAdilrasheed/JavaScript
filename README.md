@@ -1,2 +1,2 @@
 # JavaScript
-A Complete Series of Javascript from beginner to Advance
+A Complete Javascript Series from beginner to Advance
