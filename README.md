@@ -1,2 +1,2 @@
 # JavaScript
-A series for beginner 🔰 
+A beginner friendly javascript guide🔰 

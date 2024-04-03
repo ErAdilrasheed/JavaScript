@@ -100,3 +100,5 @@ const promiseFive = new Promise(function(resolve ,reject){
     .catch((error)=>{
         console.log(error);
     })
+
+    // do more practices
