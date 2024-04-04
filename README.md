@@ -1,2 +1,1 @@
-# JavaScript
-A beginner friendly javascript guide🔰 
+I will update readme file soon ............
